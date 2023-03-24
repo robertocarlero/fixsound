@@ -1,0 +1,26 @@
+.title {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	width: content;
+}
+
+.color-primary {
+	color: var(--color-primary);
+}
+
+.color-secondary {
+	color: var(--color-secondary);
+}
+
+.color-gradient {
+	background: var(--primary-gradient);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+.wrapper {
+	padding: var(--size-xs) var(--size-sm);
+	background: var(--color-light-transparent);
+	border-radius: 500px;
+}

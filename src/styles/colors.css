@@ -1,0 +1,58 @@
+:root {
+	--dark-rgb: 18 18 18; /* #121212 */
+	--dark-light-rgb: 30 30 30; /* #1e1e1e */
+	--light-rgb: 241 241 241; /* #F1F1F1 */
+	--primary-rgb: 0 209 255; /* #00D1FF */
+	--secondary-rgb: 255 0 138; /* #FF008A */
+
+	--color-dark: rgb(var(--dark-rgb));
+	--color-dark-light: rgb(var(--dark-light-rgb));
+	--color-light: rgb(var(--light-rgb));
+	--color-primary: rgb(var(--primary-rgb));
+	--color-secondary: rgb(var(--secondary-rgb));
+
+	--color-light-transparent: rgb(var(--light-rgb) / 0.1);
+	--color-primary-transparent: rgb(var(--primary-rgb) / 0.1);
+	--color-secondary-transparent: rgb(var(--secondary-rgb) / 0.1);
+
+	--color-primary-hard-transparent: rgb(var(--primary-rgb) / 0.05);
+	--color-secondary-hard-transparent: rgb(var(--secondary-rgb) / 0.05);
+}
+
+:root {
+	--primary-gradient: linear-gradient(
+		to right,
+		var(--color-primary) 0%,
+		var(--color-secondary) 120%
+	);
+	--primary-light-gradient: linear-gradient(
+		to right,
+		var(--color-primary-transparent),
+		var(--color-primary-hard-transparent) 10%,
+		transparent 50%
+	);
+	--secondary-light-gradient: linear-gradient(
+		to right,
+		var(--color-secondary-transparent),
+		var(--color-secondary-hard-transparent) 10%,
+		transparent 50%
+	);
+
+	--primary-gradient-vertical: linear-gradient(
+		to bottom,
+		var(--color-primary) 0%,
+		var(--color-secondary) 120%
+	);
+	--primary-light-gradient-vertical: linear-gradient(
+		to bottom,
+		var(--color-primary-transparent),
+		var(--color-primary-hard-transparent) 10%,
+		transparent 50%
+	);
+	--secondary-light-gradient-vertical: linear-gradient(
+		to bottom,
+		var(--color-secondary-transparent),
+		var(--color-secondary-hard-transparent) 10%,
+		transparent 50%
+	);
+}
