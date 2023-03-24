@@ -1,0 +1,16 @@
+.list-item {
+	padding: 20px;
+	text-transform: uppercase;
+	color: var(--color-light);
+	opacity: 0.5;
+	text-decoration: none;
+	border-radius: var(--radius-sm);
+}
+
+.list-item:hover {
+	background: var(--primary-light-gradient);
+}
+
+.list-item-active {
+	opacity: 1;
+}

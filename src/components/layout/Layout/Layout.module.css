@@ -1,0 +1,13 @@
+.main {
+	width: 100%;
+	max-width: 1520px;
+	margin: auto;
+	background-color: var(--color-dark);
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	padding: var(--size-lg);
+	height: 100%;
+}
