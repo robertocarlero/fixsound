@@ -1,0 +1,15 @@
+.section {
+	height: calc(100vh - 100px - (var(--size-lg) * 2));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+}
+
+.lights {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	position: absolute;
+}

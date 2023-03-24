@@ -1,0 +1,33 @@
+.container {
+	border-radius: 500px;
+	min-width: var(--size-md);
+	min-height: var(--size-md);
+	max-width: var(--size-md);
+	max-height: var(--size-md);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fill {
+	background: var(--color-light-transparent);
+}
+
+.md {
+	font-size: 2rem;
+}
+
+.primary {
+	color: var(--color-primary);
+}
+
+.secondary {
+	color: var(--color-secondary);
+}
+
+.gradient {
+	background: var(--primary-gradient);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+}

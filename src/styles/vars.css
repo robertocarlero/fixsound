@@ -1,0 +1,13 @@
+:root {
+	--size-xs: 10px;
+	--size-sm: 20px;
+	--size-md: 40px;
+	--size-lg: 50px;
+}
+
+:root {
+	--radius-xs: 5px;
+	--radius-sm: 10px;
+	--radius-md: 15px;
+	--radius-lg: 20px;
+}
