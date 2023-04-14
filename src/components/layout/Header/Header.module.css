@@ -10,3 +10,9 @@
 	background: var(--color-dark);
 	z-index: 100;
 }
+
+@media (max-width: 768px) {
+	.header {
+		padding: var(--size-sm);
+	}
+}

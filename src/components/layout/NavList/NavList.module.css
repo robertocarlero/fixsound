@@ -5,4 +5,29 @@
 .list {
 	list-style: none;
 	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+	.nav {
+		border-right: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+	.list {
+		display: none;
+		width: 100%;
+		flex-direction: column;
+		padding: var(--size-sm) 0;
+		position: absolute;
+		right: 0;
+		gap: var(--size-xs);
+		background: var(--color-dark);
+	}
+
+	.list.opened {
+		display: flex;
+		top: 70px;
+	}
 }

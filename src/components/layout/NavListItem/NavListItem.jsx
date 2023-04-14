@@ -5,7 +5,7 @@ import { useFont } from '@/hooks/useFont';
 
 import styles from './NavListItem.module.css';
 
-const NavListItem = ({ title, path }) => {
+const NavListItem = ({ onClick, title, path }) => {
 	const [fontClassName] = useFont();
 	const { asPath } = useRouter();
 
@@ -14,7 +14,7 @@ const NavListItem = ({ title, path }) => {
 		: asPath.includes(path);
 
 	return (
-		<li className={fontClassName}>
+		<li onClick={onClick} className={`${fontClassName} ${styles.container}`}>
 			<Link
 				href={path}
 				className={`

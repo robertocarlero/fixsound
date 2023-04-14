@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import { useFont } from '@/hooks/useFont';
+import { useWindowResize } from '@/hooks/useWindowResize';
 import { getSectionId } from '@/helpers/sections';
 
 import Icon from '@/components/common/Icon/Icon';
@@ -8,6 +9,7 @@ import Title from '@/components/common/Title/Title';
 import Brightness from '@/components/common/Brightness/Brightness';
 
 import { ABOUT_ITEMS } from '@/constants/content';
+import { BREAKPOINTS } from '@/constants/breakpoints';
 
 import carAsset from '@/assets/images/car-light.svg';
 
@@ -16,6 +18,15 @@ import styles from './About.module.css';
 const About = () => {
 	const sectionId = getSectionId('about');
 	const [fontClassName] = useFont(300);
+
+	const { width } = useWindowResize();
+
+	const isSmallDevice = width < BREAKPOINTS.SM;
+
+	const assetProps = {
+		width: isSmallDevice ? 250 : 400,
+		height: isSmallDevice ? 250 : 400,
+	};
 
 	return (
 		<section id={sectionId} className={styles.section}>
@@ -44,6 +55,7 @@ const About = () => {
 					width={400}
 					height={400}
 					alt="FIXSOUND text"
+					{...assetProps}
 				/>
 				<Brightness color="secondary" className={styles.brightness} />
 			</figure>

@@ -11,3 +11,9 @@
 	padding: var(--size-lg);
 	height: 100%;
 }
+
+@media (max-width: 768px) {
+	.content {
+		padding: var(--size-sm);
+	}
+}

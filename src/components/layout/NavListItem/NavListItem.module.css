@@ -1,10 +1,17 @@
+.container {
+	width: 100%;
+}
+
 .list-item {
-	padding: 20px;
+	padding: var(--size-sm);
 	text-transform: uppercase;
 	color: var(--color-light);
 	opacity: 0.5;
 	text-decoration: none;
 	border-radius: var(--radius-sm);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .list-item:hover {
@@ -13,4 +20,12 @@
 
 .list-item-active {
 	opacity: 1;
+}
+
+@media (max-width: 768px) {
+	.list-item {
+		padding: var(--size-xs) var(--size-sm);
+		width: 100%;
+		min-width: 100%;
+	}
 }

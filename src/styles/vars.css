@@ -11,3 +11,10 @@
 	--radius-md: 15px;
 	--radius-lg: 20px;
 }
+
+:root {
+	--breackpoint-xs: 410px;
+	--breackpoint-sm: 768px;
+	--breackpoint-xs: 1024px;
+	--breackpoint-xs: 1520px;
+}

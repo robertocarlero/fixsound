@@ -13,3 +13,9 @@
 	display: flex;
 	position: absolute;
 }
+
+@media (max-width: 768px) {
+	.section {
+		height: calc(100vh - 100px - (var(--size-sm) * 2));
+	}
+}
